@@ -3207,7 +3207,7 @@ function goBack() {
 </script>
 
 <script>
-$(function(){
+$(document).ready(function(){
     var requiredCheckboxes = $('.options :checkbox[required]');
     requiredCheckboxes.change(function(){
         if(requiredCheckboxes.is(':checked')) {
@@ -3217,7 +3217,6 @@ $(function(){
         }
     });
 });
-
 </script>
 
 </body>
