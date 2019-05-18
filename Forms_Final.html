@@ -6,8 +6,8 @@
 <meta name="description" content="">
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
-	
-	
+
+
 <title>E-Forms</title>
 
 
@@ -18,7 +18,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <!-- Include Date Range Picker -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script> 
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
 
@@ -43,11 +43,11 @@
 
 <!-- First Card-->
   <div class="card ">
-    <div class="p-3 mb-2 bg-danger text-white" id="headingOne">
+    <div class="p-3 mb-2 bg-light" id="headingOne">
       <h5 class="mb-0">
-	
+
         <div class="text-warning-" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Personal Details 
+          Personal Details
         </div>
       </h5>
     </div>
@@ -56,11 +56,11 @@
       <div class="card-body">
 	 <!--Form rows-->
             <div class="form-group row">
-             
+
            <label class="col-sm-3 col-form-label" for="name">Name</label>
-		   
+
 		<div class="col-sm-9">
-		
+
                          <div class="row type-2">
                             <div class="col-xs-12 col-sm-3">
                                 <select class="form-control " id="NAME__" name="NAME" required>
@@ -69,19 +69,19 @@
                                     <option value="Mr">Mr</option>
                                     <option value="Mrs">Mrs</option>
                                     <option value="Ms">Ms</option>
-                                    <option value="Mdm">Mdm</option> 
+                                    <option value="Mdm">Mdm</option>
 
                                 </select>
 								<div class="invalid-feedback">
-											Please choose  
+											Please choose
 								</div>
                             </div>
                             <div class="col-xs-12 col-sm-9">
-							
+
                                 <input type="text" class="form-control " id="Name_ID" placeholder="Full name as in NRIC or Passport" name="Name" onblur=""  required>
-								
-				
-											
+
+
+
                             <div class="valid-feedback"></div>
       <div class="invalid-feedback">Please Insert your name</div>
 							</div>
@@ -97,48 +97,48 @@
 										Please insert your NRIC
 							</div>
               </div>
-            </div>            
+            </div>
             <!--standard field code to copy end-->
             <div class="form-group row">
              <label class="col-sm-3 col-form-label" for="email">Email Addresses</label>
 			  <div class ="col-sm-9">
               <input type="email" name="email" class="form-control" id="email_ID" placeholder="Eg. Example@abc.com " onblur="getParams()" required >
-			  
+
 			  <div class="invalid-feedback">
 										Please insert a valid Email Address
 			</div>
-	
+
               </div>
             </div>
-			
+
 			<div class ="form-group row">
-		
-		
+
+
               <label class ="col-sm-3 col-form-label" for="MobileNo">Mobile Number</label>
-			  
+
 			  <div class = "col-sm-9">
               <input type="tel" name="MobileNo" class="form-control" id="MobileNo" placeholder="Eg. +(65)98765432" required>
-			  
+
 			  <div class="invalid-feedback">
-								Please enter your mobile No		
+								Please enter your mobile No
 			  </div>
 			  </div>
-           
+
 			</div>
-			
+
 						<!-- Start of Mobile and Home Number-->
 			<div class="form-group row">
-		
-			
+
+
               <label class="col-sm-3 col-form-label" for="HomeNo">Home Number</label>
 			  <div class = "col-sm-9">
               <input type="tel" name="HomeNo" class="form-control" id="HomeNo" placeholder="Eg. 987654321" required>
 			   <div class="invalid-feedback">
-								Please enter your Home No		
+								Please enter your Home No
 			  </div>
             </div>
 			</div> <!-- End of Mobile and Home Number -->
-            
+
              <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="nationality">Nationality</label>
               <div class="col-sm-9">
@@ -387,33 +387,33 @@
                                      <option value="237">YEMEN</option>
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
-                                
+
                 </select>
 				<div class="invalid-feedback">
 					Please insert your Nationality
 				</div>
               </div>
               </div>
-            
+
 			<!-- Starting of password-->
-            <!-- <div class="form-group row"> 
+            <!-- <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="password">Password</label>
               <div class="col-sm-9">
                 <input type="password" class="form-control" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-				
+
 				<div class="invalid-feedback">
 				Please insert your Password
 				</div>
-				
+
               </div>
             </div>  --><!-- End of Password-->
-			
+
 			<!--Date Selector-->
             <div class="form-group row"> <!-- Date input -->
               <label class="col-sm-3 control-label" for="date">Date of Birth</label>
               <div class="col-sm-9 ">
                 <input  class="form-control" id="date" placeholder="MM/DD/YYY" name="date" type="text"  required>
-				
+
 				<span class="input-group-addon">
 					<span class="glyphicon glyphicon-time"></span>
 				</span>
@@ -421,43 +421,43 @@
 
 				<div class="invalid-feedback">
 										Please insert your Date of Birth
-				</div>	
-					
+				</div>
+
               </div>
-			  
-			  
-		
-			  
+
+
+
+
             </div> <!-- End of Date Selector-->
-			
+
 			 <div class="form-group row"> <!-- Are you Singapore PR -->
               <label class="col-sm-3 control-label">Are you Singapore PR?</label>
               <div class="col-sm-9">
 
 
-			
+
 					<div class="radio radio-inline" >
 
 					<input type="radio" name="Are_You_Singapore_PR_Radio" id="Are_You_Singapore_PR" value="SingaporePR_Yes" required>
-					<label for="Yes" style="margin-right:15px;"> Yes </label> 
+					<label for="Yes" style="margin-right:15px;"> Yes </label>
 					<input type="radio" name="Are_You_Singapore_PR_Radio" id="Are_You_Singapore_PR" value="SingaporePR_No" />
 					<label for="No"> No </label>
 					</div>
-					
+
             </div>
 			</div> <!-- End of  Are you Singapore PR -->
-			
+
 			<div class="form-group row"> <!-- Place of birth input -->
 				  <label class="col-sm-3 control-label" for="Place">Place of Birth </label>
 				  <div class="col-sm-9">
-				
-       
+
+
                 <select id="PlaceOfBirth" class="form-control" name="placeofbirth" required>
 								<!-- <option selected>Choose...</option> -->
 									<option value="">Select Country</option>
 
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
-                                   
+
 									 <option value="240">SINGAPORE</option>
 									 <option value="129">MALAYSIA</option>
 									 <option value="100">INDONESIA</option>
@@ -558,7 +558,7 @@
                                      <option value="93">HEARD ISLAND AND MCDONALD ISLANDS</option>
                                      <option value="94">HOLY SEE (VATICAN CITY STATE)</option>
                                      <option value="95">HONDURAS</option>
-                                   
+
                                      <option value="97">HUNGARY</option>
                                      <option value="98">ICELAND</option>
 									 <option value="99">INDIA</option>
@@ -700,25 +700,25 @@
                                      <option value="237">YEMEN</option>
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
-                                
+
                 </select>
-				
+
 				<div class="invalid-feedback">
 								Please select your country
 			  </div>
-              
+
 				  </div>
             </div> <!-- End of Place of Birth-->
-			
-			
-			
+
+
+
 			<div class="form-group row"> <!-- Start of Highest Education-->
 				<label class="col-sm-3 control-label" for="HighestEducation">Highest Education</label>
 						<div class="col-sm-9">
 						 <div class="row type-2">
                             <div class="col-xs-12 col-sm-7">
 						<!-- <select class="form-control" id="HighestEducation" required> -->
-						<select class="form-control " name="HighestEducation" id="Highest_Education_ID" required> 
+						<select class="form-control " name="HighestEducation" id="Highest_Education_ID" required>
 						  <option value="">Please select</option>
 						  <option value="0_Level">O-level</option>
 						  <option value="Diploma">Diploma</option>
@@ -726,29 +726,29 @@
 						  <option value="Other_Highest_Education">Other</option>
 						</select>
 						<div class="invalid-feedback">
-															Please select your Education 
-									</div>	
+															Please select your Education
+									</div>
 						</div>
-						
+
 						<div class="col-xs-12 col-sm-5">
 						<input type="text"  name="Highest_Education_ID_Others" class="form-control " id="Highest_Education_ID_Others" placeholder="Please state your qualification" name="" >
 						</div>
 						</div>
 			</div> <!-- End of highest Education-->
-			
+
 
       </div> <!-- End of first card-body-->
     </div>  <!-- End of FirstCollapseOne -->
   </div> <!-- close the first card-->
-</div> <!--close the first tab-->  
+</div> <!--close the first tab-->
+
   
-  
-  
+
   <!--Second Card-->
-  <div class="card border-secondary mb-3">
-    <div class="p-3 mb-2 bg-danger text-white" id="headingTwo">
+  <div class="card mb-3">
+    <div class="p-3 mb-2 bg-light" id="headingTwo">
       <h5 class="mb-0">
-        <div class="text-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="False" aria-controls="collapseTwo">
+        <div class="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="False" aria-controls="collapseTwo">
           Financial Details
         </div>
       </h5>
@@ -756,8 +756,8 @@
 
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
-		 <div class="form-group row"> 
-		 
+		 <div class="form-group row">
+
 				<!-- Start Net Worth -->
               <label class="col-sm-3 control-label" for="Net Worth">Net Worth </label>
               <div class="col-sm-9">
@@ -766,67 +766,67 @@
 						<option value="1">Less than $500,000</option>
 						<option value="2">$500,000-$1,000,000</option>
 						<option value="3">$1,000,001-$2,000,000</option>
-						<option value="4">$Above $2,000,000</option>   
+						<option value="4">$Above $2,000,000</option>
 				</select>
-				
+
 				<div class="invalid-feedback">
-										Please insert your Net Worth 
-				</div>	
+										Please insert your Net Worth
+				</div>
 			</div>
               </div> <!-- End of Net Worth-->
-			  
-			  
+
+
 			  <!-- Start of Source Wealth -->
-				<div class="form-group row"> 
+				<div class="form-group row">
 					<label class="col-sm-3 control-label" for="Place">Source of Wealth/Funds</label>
 						<div class="form-group options">
 							<div class= "col-sm-9">
 								<div class="form-check">
 									<input class="form-check-input" name="option[]" type="checkbox" value="" id="defaultCheck1" required>
 									<label class="form-check-label" for="defaultCheck1">Savings	</label> <br>
-								
-									
+
+
 									  <input class="form-check-input" name="option[]" type="checkbox" value="" id="defaultCheck2" required>
-									  <label class="form-check-label" for="defaultCheck2">Inherited Wealth</label>	<br>				  
-									
+									  <label class="form-check-label" for="defaultCheck2">Inherited Wealth</label>	<br>
+
 									  <input class="form-check-input " type="checkbox" name="option[]" value="" id="defaultCheck3" required>
-									  <label class="form-check-label" for="defaultCheck3">Salary</label>	<br>		 
-									
+									  <label class="form-check-label" for="defaultCheck3">Salary</label>	<br>
+
 									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" name="option[]" required>
 									  <label class="form-check-label" for="defaultCheck4">Rental Income</label><br>
-									
+
 									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" name="option[]" required>
 									  <label class="form-check-label" for="defaultCheck5">Business</label> <br>
-									
+
 									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck6" name="option[]" required>
 									  <label class="form-check-label" for="defaultCheck6">Sales of Property/Investment</label> <br>
-									
+
 									<div class="row type-2">
 										<div class="col-xs-12 col-sm-2">
 										  <input class="form-check-input" type="checkbox" value="Others" id="defaultCheck7" name="option[]" required>
-										  <label class="form-check-label" for="defaultCheck7">Others</label><br>	
+										  <label class="form-check-label" for="defaultCheck7">Others</label><br>
 										</div>
-									</div> 
-										 <input type="text" style="display:none" name="Other_Please_State" class="form-control col-md-5 " id="Others_Source_of_Wealth" placeholder="Please state if others" name="Others" >						
-									
-								
+									</div>
+										 <input type="text" style="display:none" name="Other_Please_State" class="form-control col-md-5 " id="Others_Source_of_Wealth" placeholder="Please state if others" name="Others" >
+
+
 									<div class="invalid-feedback">
 										Please select at least one option
 									</div>
 								</div>
 							</div>
-						</div> 
+						</div>
 				</div><!-- End of Source Wealth -->
-            
-                    
+
+
                   </div> <!-- End of Card Body -->
                 </div> <!-- End of Collpase two -->
               </div> <!-- End of Card two-->
-			  
-			  
-			  
-			  
-			  
+
+
+
+
+
 			  <!-- Start of Card Three -->
 			  <div class="card border-secondary mb-3">
     <div class="p-3 mb-2 bg-danger text-white" id="headingThree">
@@ -836,26 +836,26 @@
         </div>
       </h5>
     </div>
-	
+
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
       <div class="card-body">
 		 <div class="form-group row">
-			
+
 			<div class="col-md-12">
-			
+
               <label for="Mailing_Address_Contact_Details">Mailing Address</label>
               <input type="text" class="form-control" id="Mailing_Address_Contact_Details" placeholder="1234 Main St" name="MailingAddress" onload = "" required>
 			  <div class="invalid-feedback">Please enter your mailing address</div>
-			 
+
 			  <div class="row type-3">
                             <div class="col-sm-5">
                                <label for="Country_Contact_Details">Country</label>
-							   
+
 							   <select class="form-control  " id="Country_Contact_Details" name="Country_Contact_Details"  required>
 									<option value="" >Select Country</option>
-                                
+
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
-                                     
+
 									<option value="240">SINGAPORE</option>
 									 <option value="129">MALAYSIA</option>
 									 <option value="100">INDONESIA</option>
@@ -1098,7 +1098,7 @@
                                      <option value="237">YEMEN</option>
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
-                                
+
                 </select>
 								<div class="invalid-feedback">
 											Please Select Country
@@ -1110,56 +1110,56 @@
                             <div class="invalid-feedback">
 										Please enter postal Code
 							</div>
-							
-							
-					
-                    
+
+
+
+
                         <input type="button" class="btn btn-danger " value="Look up Address" id="Mailing_Address_LookUp_Address" a href="">
-						
-              
-                            
-							
+
+
+
+
 							</div>
-							
-						
+
+
                </div>
 			   <small id="emailHelp" class="form-text text-muted">We require this mailing address to be the same as your account maintained with CDP</small>
-			  
-			  
-			  
+
+
+
             </div>
-			</div> <!-- End of Mailing Address, Country ,Postal Code --> 
-			
+			</div> <!-- End of Mailing Address, Country ,Postal Code -->
+
 				 <!-- Start of Business Partner -->
 			  <div class="form-group row ">
 			  <div class="col-md-12">
-			
+
               <label for="Residential_Address_label">Select if Mailing address is different from Residential Address</label>
               <div class="radio radio-inline" >
 
 					<input type="radio" name="Residential_Address_Radio" id="Residential_Address_" value="Residential_Address_Yes" required>
-				
+
 					<label for="Yes" style="margin-right:20px;"> Yes </label>
 					<input type="radio" name="Residential_Address_Radio" id="Residential_Address_" value="Residential_Address_No" />
 					<label for="No"> No </label>
-					
-					
-			  
+
+
+
 			  </div>
-			
+
              <div class="form-group row" id="Residential_Address_OwnerBox" style="display:none; ">
-		
+
 					<!-- <input class="form-control" type="text" name="Business_Owner" size="40" placeholder="Please state the industry of your businesses if  'YES'" /> -->
 					<div class="col-md-12">
-					
-					  
+
+
                             <div class="col-md-12">
                                <label for="Country_Residential_Address_Label">Country</label>
 								<select class="form-control  col-md-12" id="Country_Contact_Details" name="Country_Contact_Details"  >
 									<option value="" >Select Country</option>
-                                
+
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
-                                    
+
 									 <option value="240">SINGAPORE</option>
 									 <option value="129">MALAYSIA</option>
 									 <option value="100">INDONESIA</option>
@@ -1402,7 +1402,7 @@
                                      <option value="237">YEMEN</option>
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
-                                
+
                 </select>
 								<div class="invalid-feedback">
 											Please Select Country
@@ -1415,27 +1415,27 @@
 										Please enter postal Code
 							</div>
 							<div class="btn-groups">
-								
+
 							<input type="button" class="btn btn-danger " value="Look up Address" id="Residential_Address_LookUp_Address" a href="">
-						
+
 							</div>
 							</div>
-							
+
 							<div class="row-md-2">
-					
-                                
-                            
+
+
+
 							</div>
-               
-					
-					
+
+
+
               <label for="Residential_Address_Contact_Details_Label">Residential Address</label>
               <input type="text" class="form-control" id="Residential_Address_Contact_Details" placeholder="" name="Residential_Address_Contact_Details">
 			  <div class="invalid-feedback">Please enter your Residential address</div>
-       
-        
+
+
 			   <small id="emailHelp" class="form-text text-muted">If different from above</small>
-			  
+
 			  <!-- Start of Specify Reason-->
 			<div class="form-row">
 			<div class="form-group col-md-12">
@@ -1444,44 +1444,44 @@
 			  <small id="emailHelp" class="form-text text-muted"> please specify the reason that your residential different from mailing address</small>
             </div>
 			</div> <!-- End of Specify Reason -->
-			  
+
             </div> <!-- End of Residential Address -->
-					
+
 					</div>
 					</td>
-			 
+
 			   </div>
 			<!-- </div> -->
             </div> <!-- End of busniess Partner -->
-			
-			
-			<!-- Start of Residential address-->
-			
-			
-			
-			
-			
 
-                    
+
+			<!-- Start of Residential address-->
+
+
+
+
+
+
+
                   </div> <!-- End of Card Body Three -->
                 </div> <!-- End of Collpase Three -->
               </div> <!-- End of Card Three-->
-	
-	
-	
+
+
+
 			  <!-- Start of Card Fourth-->
 			    <div class="card border-secondary mb-3">
     <div class="p-3 mb-2 bg-danger text-white" id="headingFourth">
       <h5 class="mb-0">
         <div class="text-white" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="False" aria-controls="collapseFourth">
-          Employment Details 
+          Employment Details
         </div>
       </h5>
     </div>
 
     <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordion">
       <div class="card-body">
-	  
+
 	  <div class="form-group row">
               <label class="col-md-3 control-label" for="Are_You_Business_Partner_label">Select only One</label>
               <div class="col-md-9" >
@@ -1489,20 +1489,20 @@
 
 					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Employed_Select_Only_One" required>
 					<label for="Employed" style="margin-right:20px;"> Employed </label>
-					
+
 					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Self_Employed_Select_Only_One" />
 					<label for="Self_Employed" style="margin-right:20px;"> Self-Employed </label>
-					
+
 					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Unemployed_Select_Only_One" />
 					<label for="Unemployed" style="margin-right:20px;"> Unemployed </label>
-					
-					
-			  
+
+
+
 			  </div>
-			  
+
 			  <div id="Select_Only_One_OwnerBox_Employed" style="display: none;"><em></em>
 			    <!-- Start of Company Name  -->
-			  	<div class="form-group row"> 
+			  	<div class="form-group row">
               <label class="col-md-3 control-label" for="CompanyName_Label">Company Name: </label>
               <div class="col-sm-9">
 					<input type="text" class="form-control" id="CompanyName" name="CompanyName" placeholder=""  >
@@ -1511,9 +1511,9 @@
 			  </div>
               </div>
             </div><!-- End of Company Name   -->
-			
+
 			<!-- Start of Occupation  -->
-				<div class="form-group row"> 
+				<div class="form-group row">
 				<label class="col-sm-3 control-label" for="Occupation_Label">Occupation </label>
 				<div class="col-sm-9">
 					<input type="text" class="form-control" name="Occupation" id="occupation_ID"  placeholder="" >
@@ -1522,7 +1522,7 @@
 				</div>
 				</div>
 				</div> <!-- End of Occupation -->
-				
+
 				<!-- Start of Annual Income -->
 			<div class="form-group row"> <!-- Start of Annual Income -->
               <label class="col-sm-3 control-label" for="AnnualIncome_Label">Annual income </label>
@@ -1531,7 +1531,7 @@
 						<option value=""> Please Select </option>
 						<option value="1"> <$30,000 </option>
 						<option value="2"> $30,000 - 60,000 </option>
-						<option value="3"> $60,001 - $100,000 </option>   
+						<option value="3"> $60,001 - $100,000 </option>
 						<option value="4"> $100,001 - $150,000 </option>
 						<option value="5"> $150,001 - $300,000 </option>
 						<option value="6"> >$300,000 </option>
@@ -1541,18 +1541,18 @@
 			  </div>
 		 </div>
 		 </div> <!-- End of Annual Income -->
-		 
-		 
+
+
 		 <!-- Start of Office Number -->
-		 <div class="form-group row">		
+		 <div class="form-group row">
               <label class="col-sm-3 control-label" for="OfficeNo_Label">Office Number</label>
 			  <div class="col-sm-3">
               <input type="tel" class="form-control" id="OfficeNo" name="OfficeNo" placeholder="Eg. (+65)67890987">
             </div>
 			</div> <!--End of Office Number -->
-			
-			
-			
+
+
+
 			<!-- Start of Country -->
 			<div class="form-row">
               <div class="form-group col-md-6">
@@ -1562,16 +1562,16 @@
 								Please enter your company address
 			  </div>
               </div>
-			  
-			  
+
+
               <div class="form-group col-md-4">
                 <label for="Country_Company_Label">Country</label>
                 <select id="Country_Company" class="form-control" name="Country_Company" >
 								<!-- <option selected>Choose...</option> -->
-						
-                                    
-                                     
-                                    
+
+
+
+
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
                                      <option value="" >Select Country</option>
 									 <option value="240">SINGAPORE</option>
@@ -1816,9 +1816,9 @@
                                      <option value="237">YEMEN</option>
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
-                                
+
                 </select>
-				
+
 				<div class="invalid-feedback">
 								Please select your country
 			  </div>
@@ -1831,7 +1831,7 @@
 			  </div>
               </div>
             </div><!-- End of Postal Code -->
-			
+
 			 <!-- Start of Business Partner -->
 			  <div class="form-group row">
               <label class="col-sm-5 control-label" for="Are_You_Business_Partner_label">Are you the business owner/partner</label>
@@ -1839,28 +1839,28 @@
 			  <div class="radio radio-inline" >
 
 					<input type="radio" name="BusinessOwner_Partner_Radio" id="Business_Owner_Partner" value="Business_Owner_Yes" >
-				
+
 					<label for="Yes"> Yes </label>
 					<input type="radio" name="BusinessOwner_Partner_Radio" id="Business_Owner_Partner" value="Business_Owner_No" />
 					<label for="No"> No </label>
-					
-					
-			  
+
+
+
 			  </div>
-			  
+
              <div id="Business_OwnerBox" style="display: none;"><em></em>
 					<input class="form-control" type="text" name="Business_Owner" size="40" placeholder="Please state the industry of your businesses if  'YES'" /></div></td>
 			 </div>
             </div> <!-- End of busniess Partner -->
-			
-			
+
+
 			  </div>
-			  
-			  
-			  
+
+
+
 			  <div id="Select_Only_One_OwnerBox_Self_Employed" style="display: none;"><em></em>
 						  <!-- Start of Company Name  -->
-			<div class="form-group row"> 
+			<div class="form-group row">
               <label class="col-md-3 control-label" for="CompanyName_Label">Company Name: </label>
               <div class="col-sm-9">
 					<input type="text" class="form-control" id="CompanyName" placeholder="" name="CompanyName"  >
@@ -1869,10 +1869,10 @@
 			  </div>
               </div>
             </div> <!-- End of Company Name   -->
-			  
-			  
+
+
 			  	  <!-- Start of Occupation  -->
-				<div class="form-group row"> 
+				<div class="form-group row">
 				<label class="col-sm-3 control-label" for="Occupation_Label">Occupation </label>
 				<div class="col-sm-9">
 					<input type="text" class="form-control" id="occupation_ID" placeholder="" name="Occupation_ID" >
@@ -1881,7 +1881,7 @@
 				</div>
 				</div>
 				</div> <!-- End of Occupation -->
-				
+
 				<!-- Start of Annual Income -->
 			<div class="form-group row"> <!-- Start of Annual Income -->
               <label class="col-sm-3 control-label" for="AnnualIncome_Label">Annual income </label>
@@ -1890,7 +1890,7 @@
 						<option value=""> Please Select </option>
 						<option value="1"> <$30,000 </option>
 						<option value="2"> $30,000 - 60,000 </option>
-						<option value="3"> $60,001 - $100,000 </option>   
+						<option value="3"> $60,001 - $100,000 </option>
 						<option value="4"> $100,001 - $150,000 </option>
 						<option value="5"> $150,001 - $300,000 </option>
 						<option value="6"> >$300,000 </option>
@@ -1900,18 +1900,18 @@
 			  </div>
 		 </div>
 		 </div> <!-- End of Annual Income -->
-		 
-		 
+
+
 		 <!-- Start of Office Number -->
-		 <div class="form-group row">		
+		 <div class="form-group row">
               <label class="col-sm-3 control-label" for="OfficeNo_Label">Office Number</label>
 			  <div class="col-sm-3">
               <input type="tel" class="form-control" id="OfficeNo" placeholder="Eg. (+65)67890987" name="OfficeNo">
             </div>
 			</div> <!--End of Office Number -->
-			
-			
-			
+
+
+
 			<!-- Start of Country -->
 			<div class="form-row">
               <div class="form-group col-md-6">
@@ -1921,16 +1921,16 @@
 								Please enter your company address
 			  </div>
               </div>
-			  
-			  
+
+
               <div class="form-group col-md-4">
                 <label for="Country_Company_Label">Country</label>
                 <select id="Country_Company" class="form-control" name="Country_Company" >
 								<!-- <option selected>Choose...</option> -->
-								
-                                    
-                                     
-                                    
+
+
+
+
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
                                      <option value="" >Select Country</option>
 									 <option value="240">SINGAPORE</option>
@@ -2175,7 +2175,7 @@
                                      <option value="237">YEMEN</option>
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
-                                
+
                 </select>
 
 				<div class="invalid-feedback">
@@ -2190,7 +2190,7 @@
 			  </div>
               </div>
             </div><!-- End of Postal Code -->
-			
+
 			 <!-- Start of Business Partner -->
 			  <div class="form-group row">
               <label class="col-sm-5 control-label" for="Are_You_Business_Partner_label">Are you the business owner/partner</label>
@@ -2198,24 +2198,24 @@
 			  <div class="radio radio-inline" >
 
 					<input type="radio" name="BusinessOwner_Partner_Radio2" id="Business_Owner_Partner2" value="Business_Owner_Yes2" >
-				
+
 					<label for="Yes"> Yes </label>
 					<input type="radio" name="BusinessOwner_Partner_Radio2" id="Business_Owner_Partner2" value="Business_Owner_No2" />
 					<label for="No"> No </label>
-					
-					
-			  
+
+
+
 			  </div>
-			  
+
              <div id="Business_OwnerBox2" style="display: none;"><em></em>
 					<input class="form-control" type="text" name="Business_Owner" size="40" placeholder="Please state the industry of your businesses if  'YES'" /></div></td>
 			 </div>
             </div> <!-- End of busniess Partner -->
-					
+
 			</div>
-			  
-             
-			 
+
+
+
 					<div class="form-group row" id="Select_Only_Two_OwnerBox" style="display:none; ">
 			         <!-- <label class="col-sm-3 control-label" for="Unemployed_label">Unemployed </label> -->
               <div class="col-md-12">
@@ -2227,11 +2227,11 @@
                                     <option value="HouseWife">HouseWife</option>
                                     <option value="Student">Student</option>
                                     <option value="Others_Unemployed">Others</option>
-                                   
+
 
                                 </select>
 								<div class="invalid-feedback">
-											Please choose  
+											Please choose
 								</div>
                             </div>
                             <div class="col-xs-12 col-md-9">
@@ -2241,39 +2241,39 @@
 							</div>
 							</div>
                         </div>
-			
+
 			 </div>
-			
-			
-                </div> 
-			
-			 
-			 
+
+
+                </div>
+
+
+
 			 </div>
        </div>
-	  
-	  
-	  
-	
+
+
+
+
             </div> <!-- End  Select Only One -->
-			  
-		
-            
-			
-			
-			
+
+
+
+
+
+
 			 <!-- End of Card Body Fourth -->
                 </div> <!-- End of Collpase Fourth  -->
               </div> <!-- End of Card Fourth -->
-			  
+
 			  </div>
-			  
-			  
-			  
-			  
-			  
-			  
-			  
+
+
+
+
+
+
+
 			  <!--Fifth Card-->
   <div class="card border-secondary mb-3">
     <div class="p-3 mb-2 bg-danger text-white" id="headingFifth">
@@ -2286,19 +2286,19 @@
 
     <div id="collapseFifth" class="collapse" aria-labelledby="headingFifth" data-parent="#accordion">
       <div class="card-body">
-	  
-	  
+
+
 		<!-- Start of Relationship -->
-		 <div class="form-group row"> 
+		 <div class="form-group row">
               <label class="col-sm-3 control-label" for="Relationship">Relationship </label>
               <div class="col-sm-9 ">
 			  <label class="col-sm-10 control-label" for="Relationship">Are you related to any employee/broker? </label>
-              
+
 					<input type="radio" name="Relationship_Radio" id="Relationship" value="RelationshipYes" required />
 					<label for="Yes" style="margin-right:20px;" > Yes </label>
 					<input type="radio" name="Relationship_Radio" id="Relationship" value="RelationshipNo" />
 					<label for="No"> No </label>
-	
+
               </div>
 			  <div class="col-sm-3 control-label" for=""> </div>
 			  <div class = "col-md-9">
@@ -2306,11 +2306,11 @@
 					<input class="form-control" type="text" name="otherevent" size="40" placeholder="Name of employee/broker (Trading representative) and relationship" /></div></td>
 			  <!-- <input type="text" class="form-control" id="Relationship" placeholder="Name of employee/broker (Trading representative) and relationship if stated 'YES'" name="Business_Owner_Partner"  > -->
 				</div>
-				
-				
+
+
 		 </div> <!-- End of Relationship -->
-			  
-			  
+
+
 			 <div class="form-group row"> <!-- Start of Trading Experience  -->
 				  <label class="col-sm-3 control-label" for="TradingExperience">Trading Experience </label>
 				  <div class="col-sm-9">
@@ -2320,7 +2320,7 @@
 					<input type="radio" name="Trading_Experience_Radio" id="Trading_Experience" value="TradingExperienceNo" />
 					<label for="No"> No </label>
 
-			
+
 				  </div>
 				  <div class="col-sm-3 control-label" for=""> </div>
 			  <div class = "col-md-9">
@@ -2328,12 +2328,12 @@
 					<input class="form-control" type="text" name="otherevent" size="40" placeholder="Name of trading firm if stated 'YES'" /></div></td>
 				</div>
 			 </div> <!-- End of Trading Experience -->
-				
+
 				<!-- Start of Trading Objective  -->
-				<div class="form-group row"> 
+				<div class="form-group row">
 					  <label class="col-sm-3 control-label" for="Trading_Objective" label="Trading_Objective_Field">Trading Objective </label>
 					  <div class="col-sm-9">
-					  
+
 					   <div class="row type-2">
                             <div class="col-xs-12 col-sm-5">
                                 <select class="form-control " id="Trading_Objective" name="Trading_Objective_options" type="" required>
@@ -2342,76 +2342,76 @@
                                     <option value="ShortTermTradingProfits">Short Term Trading Profits</option>
                                     <option value="Passive_Income">Passive income / Dividend Yield</option>
                                     <option value="Hedging">Hedging</option>
-                                    <option value="Others_Trading_Objectives">Others</option> 
+                                    <option value="Others_Trading_Objectives">Others</option>
 
                                 </select>
 								<div class="invalid-feedback">
-											Please select  
+											Please select
 								</div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
-							
+
                                 <input type="text" class="form-control " id="Trading_Objective_Others" placeholder="Please state if 'OTHERS'" name="Trading_Objective" >
 								<!-- <div id="Trading_Objective_Box" style="display: none;"><em></em>
 									<input class="form-control" type="text" name="otherevent" size="40" placeholder="Please state if 'OTHERS'" /></div></td> -->
-		
+
 							</div>
                         </div>
-					  
-					  
-					  
-					  
-						
-				
-			  
+
+
+
+
+
+
+
 				 </div>
 				 </div> <!-- End  of Trading Objective  -->
-				 
-				 
+
+
 				 <!-- Start of Tax Residency Declaration  -->
-				 <div class="form-group row"> 
+				 <div class="form-group row">
 				  <label class="col-sm-3 control-label" for="Tax_Residency_Declaration">Tax Residency Declaration </label>
 				  <div class="col-sm-9">
 				  <label class="col-sm-10 control-label" for="Tax_Residency_Declaration">What is/are your country(ies) of Tax Residence </label>
-				  
-				
+
+
 					<div class="form-check ">
 						<input class="form-check-input" type="checkbox" value="" id="Singapore_Taxpayer_Identification" name=" Singapore_Taxpayer_Identification">
 						<label class="form-check-label" for="Singapore_Taxpayer_Identification">
-				
+
 						</label><b>Singapore</b><br>
 						<label >Taxpayer Identification No . (TIN)</label>
 						<input type="text" class="form-control col-5 align-self-center  " name="Trading_Experience" id="Trading_Experience" placeholder="If NRIC is not your TIN , please specify " name="Trading_Experience"  >
 					</div>
-					
-				
-					
+
+
+
 					<div class="form-check ">
 						<div class="row type-2">
 							<div class="col-sm-6">
 								<label class="form-check-label" for="United_States_Taxpayer_Identification">
 								<input class="form-check-input" type="checkbox" value="" name="United_States_Taxpayer_Identification" id="United_States_Taxpayer_Identification"><b>United States of America</b>
 						</label>
-						
+
 						</div>
 						</div>
-						
+
 						<label style="display:none" for="US_Taxpayer_Identification">US Taxpayer Identification No. / SSN
 						<input type="text" style="display:none" class="form-control  " id="US_Taxpayer_Identification" placeholder="Please Specify" name="US_Taxpayer_Identification"   >
-						
+
 						</label>
 					</div>
-					
-					
-					
+
+
+
 					<div class="form-check ">
-						
+
 						<label class="form-check-label" for="Other_Country_Identification">
 							<input class="form-check-input" name="Other_Country_Identification_No" type="checkbox" value="" id="Other_Country_Identification_No" ><b>Other Country</b>
 						</label>
-						
+
 					<div class="form-row">
-				
+
 					  <div class="form-group col-md-4">
 					   <label for="Other_Countries_Tax_Identification_No" style="display:none"  >Have a Identification no.?  <br>
 						<select class="form-control " style="display:none" id="Other_Countries_Tax_Identification_No" name="Other_Countries_Tax_Identification_No" type=""  >
@@ -2420,22 +2420,22 @@
                                     <option value="ShortTermTradingProfits">No, I am unable to obtain TIN </option>
                                     <option value="Passive_Income">No, TIN not issued by country</option>
                                     <option value="Hedging">No, TIN not required by country</option>
-                                    <option value="Others_Trading_Objectives">No, No tax obligation </option> 
+                                    <option value="Others_Trading_Objectives">No, No tax obligation </option>
 
                                 </select>
-								
+
 								</label>
 					  </div>
-			  
-			  
+
+
               <div class="form-group col-md-4">
                 <label for="Other_Country_Select_Country_Identification_No" style="display:none">Country <br>
                 <select id="Other_Country_Select_Country_Identification_No" style="display:none" class="form-control" name="Other_Country_Select_Country_Identification_No" >
 								<!-- <option selected>Choose...</option> -->
-									
-                                    
-                                     
-                                    
+
+
+
+
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
                                      <option value="" >Select Country</option>
 									 <option value="240">SINGAPORE</option>
@@ -2680,9 +2680,9 @@
                                      <option value="237">YEMEN</option>
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
-                                
+
                 </select>
-				
+
 				<div class="invalid-feedback">
 								Please select your country
 			  </div>
@@ -2698,17 +2698,17 @@
               </div>
             </div>
 					</div>
-			
+
 				  </div>
 				</div>  <!-- End  of Tax Residency Declaration  -->
-            
-                    
+
+
                   </div> <!-- End of Card Body Fifth -->
                 </div> <!-- End of Collpase Fifth -->
               </div> <!-- End of Card Fifth-->
-			  
-			  
-			  
+
+
+
 			   <div class="card border-secondary mb-3">
     <div class="p-3 mb-2 bg-danger text-white" id="headingSixth">
       <h5 class="mb-0">
@@ -2720,20 +2720,20 @@
 
     <div id="collapseSixth" class="collapse" aria-labelledby="headingSixth" data-parent="#accordion">
       <div class="card-body">
-	  
-	  
+
+
 		<!-- Signture -->
-		<div class="form-group row"> 
-            
+		<div class="form-group row">
+
               <div class="col-sm-9 ">
 			  <label>I acknowledge that I have read, understand and agree to the standard terms and conditions.</label>
-             
-              </div>	
+
+              </div>
 		 </div>
-		 <div class="form-group row" style=""> 
-         
+		 <div class="form-group row" style="">
+
  <br> <br><br>
- 
+
   <div class=" form-group row">
   <div class="col-sm-9 imgUp">
     <div class="imagePreview" ></div><br>
@@ -2746,21 +2746,21 @@ Upload signature image<input type="file" class="uploadFile img" value="Upload Ph
  <br><br>
  <!-- <div class="btn-groups">
                         <input type="submit" class="btn btn-danger " value="Apply Now" a href="">
-						
+
   </div> -->
-				
-				
-		 </div> 
+
+
+		 </div>
 
                   </div> <!-- End of Card Body Fifth -->
                 </div> <!-- End of Collpase Fifth -->
               </div> <!-- End of Card Fifth-->
-			  
-			  
-			  
+
+
+
 			    <div></div>
 	  <div></div>
-			  
+
 			  <div class="form-group form-footer">
                     <div class="btn-groups">
                         <input type="submit" class="btn btn-outline-dark " value="Apply Now" onclick="VerifyInformation()">
@@ -2769,32 +2769,32 @@ Upload signature image<input type="file" class="uploadFile img" value="Upload Ph
                     </div>
 					</div>
             </div><!--End of Accordian Please do not disturb-->
-			
-			
-            
+
+
+
 			</form> <!-- End of Form Accordian Please do not disturb-->
 
-			
+
 	  </div> <!-- end of Container Accordian Please do not disturb -->
-	  
+
     </div> <!-- Image Accordian Please do not disturb -->
-  
+
 
  <!--Close the forms =
 </div><!-- close div container-->
 
 
-  
-  
+
+
  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- <script type="text/javascript"> -->
             <!-- $(function () { -->
                 <!-- $("#Date").datetimepicker(); -->
             <!-- }); -->
         <!-- </script> -->
-		
+
 		<script>
     $(document).ready(function(){
       var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -2810,7 +2810,7 @@ Upload signature image<input type="file" class="uploadFile img" value="Upload Ph
 </script>
 
 
-<script type="text/javascript"> 
+<script type="text/javascript">
 <!--Employement Details -->  <!-- http://www.techtipntrick.com/showhide-form-elements-radio-button-selection/ -->
 
 <!-- Are you business owner/partner -->
@@ -2857,8 +2857,8 @@ $("#Unemployed").change(function() {
     $('#Unemployed_Field').show();
     <!-- $('#otherField').attr('required', ''); -->
     <!-- $('#otherField').attr('data-error', 'This field is required.'); -->
-  
-  } 
+
+  }
   else if ($(this).val() == "Student" ){
 	$('#Unemployed_Field').show();
   }
@@ -2879,7 +2879,7 @@ $("#Unemployed").trigger("change");
 
 
 <!-- Get to know you more --> <!-- http://www.techtipntrick.com/showhide-form-elements-radio-button-selection/ -->
-<!-- Relationship radio --> 
+<!-- Relationship radio -->
   $("input[name='Relationship_Radio']:radio")
     .change(function() {
       $("#RelationshipBox").toggle($(this).val() == "RelationshipYes");
@@ -2892,7 +2892,7 @@ $("#Unemployed").trigger("change");
 });
 
 
-<!-- https://www.solodev.com/blog/web-design/how-to-hide-form-fields-based-upon-user-selection.stml --> 
+<!-- https://www.solodev.com/blog/web-design/how-to-hide-form-fields-based-upon-user-selection.stml -->
 
 $("#Highest_Education_ID").change(function() {
   if ($(this).val() == "Other_Highest_Education") {
@@ -2922,16 +2922,16 @@ $("#Trading_Objective").change(function() {
 $("#Trading_Objective").trigger("change");
 
 
-<!-- CheckBox Others_Source_of_Wealth, https://codepen.io/hardiksolanki/pen/BKrKGa --> 
+<!-- CheckBox Others_Source_of_Wealth, https://codepen.io/hardiksolanki/pen/BKrKGa -->
 
 $(function () {
         $("#defaultCheck7").click(function () {
             if ($(this).is(":checked")) {
                 $("#Others_Source_of_Wealth").show();
-             
+
             } else {
                 $("#Others_Source_of_Wealth").hide();
-        
+
             }
         });
     });
@@ -2942,14 +2942,14 @@ $(function () {
             if ($(this).is(":checked")) {
                 $("#US_Taxpayer_Identification").show();
 				$('label[for="US_Taxpayer_Identification"]').show();
-             
+
             } else {
                 $("#US_Taxpayer_Identification").hide();
 				$('label[for="US_Taxpayer_Identification"]').hide();
-        
+
             }
         });
-    });	
+    });
 
 <!-- Checkbox Other_Country , https://codepen.io/hardiksolanki/pen/BKrKGa-->
 $(function () {
@@ -2957,30 +2957,30 @@ $(function () {
             if ($(this).is(":checked")) {
              $("#Other_Countries_Tax_Identification_No").show();
 			 $('label[for="Other_Countries_Tax_Identification_No"]').show();
-			
-	
-				
+
+
+
 			    $("#Other_Country_Select_Country_Identification_No").show();
 				$('label[for="Other_Country_Select_Country_Identification_No"]').show();
-				
-				
+
+
 			    $("#Other_Country_TaxNo_Identification_No").show();
 				$('label[for="Other_Country_TaxNo_Identification_No"]').show();
-				
-             
+
+
             } else {
                $("#Other_Countries_Tax_Identification_No").hide();
 				$('label[for="Other_Countries_Tax_Identification_No"]').hide();
-				
+
 				$("#Other_Country_Select_Country_Identification_No").hide();
 				$('label[for="Other_Country_Select_Country_Identification_No"]').hide();
-				
+
 				$("#Other_Country_TaxNo_Identification_No").hide();
 				$('label[for="Other_Country_TaxNo_Identification_No"]').hide();
-        
+
             }
         });
-    });	
+    });
 
 
 
@@ -2999,17 +2999,17 @@ $(function() {
     		var uploadFile = $(this);
         var files = !!this.files ? this.files : [];
         if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
- 
+
         if (/^image/.test( files[0].type)){ // only image file
             var reader = new FileReader(); // instance of the FileReader
             reader.readAsDataURL(files[0]); // read the local file
- 
+
             reader.onloadend = function(){ // set image data as background of div
                 //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
 uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
             }
         }
-      
+
     });
 });
 
@@ -3043,7 +3043,7 @@ uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(
 		} else {
 		    requiredCheckboxes.attr('required', 'required');
 		}
-	    });	     
+	    });
 	//original listener function
         if (form.checkValidity() === false) {
           event.preventDefault();
@@ -3056,7 +3056,7 @@ uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(
 })();
 
 
- 
+
 
 
 
@@ -3064,44 +3064,44 @@ uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(
 
 //Address lookup function
   function httpGet(my_integer,)
-{	
+{
 
 	my_integer = document.getElementById("PostalCode_Contact_Details").value;
-	
+
 
 	// take integer
 
 	// plug integer into  this thing https://developers.onemap.sg/commonapi/search?searchVal=320014&returnGeom=Y&getAddrDetails=Y&pageNum=1
-	
+
 	my_string = "https://developers.onemap.sg/commonapi/search?searchVal=".concat(my_integer);
 	my_string = my_string.concat("&returnGeom=Y&getAddrDetails=Y&pageNum=1");
-	
-	
+
+
 	// some sort of string concat to make the long string url
-	
+
 	// set theUrl = this new long url
 	theUrl = my_string;
 
 		<!-- theUrl = my_String; -->
 
-	
-	
+
+
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
     xmlHttp.send( null );
-	var1 =JSON.parse(xmlHttp.responseText)['results'][0]['BLK_NO'] 
-	var2 =JSON.parse(xmlHttp.responseText)['results'][0]['ROAD_NAME'] 
+	var1 =JSON.parse(xmlHttp.responseText)['results'][0]['BLK_NO']
+	var2 =JSON.parse(xmlHttp.responseText)['results'][0]['ROAD_NAME']
 	var3 =JSON.parse(xmlHttp.responseText)['results'][0]['BUILDING']
-	
-	
+
+
 	result =  (var1 + " " + var2 + " " + var3)
-	
+
 	//document.getElementById("Mailing_Address_Contact_Details").value  = JSON.parse(xmlHttp.responseText)['results'][0]['BLK_NO']
 	document.getElementById("Mailing_Address_Contact_Details").value  = result;
-	
-	
 
-	
+
+
+
     return xmlHttp.responseText;
 }
 
@@ -3129,37 +3129,37 @@ $(document).ready(function(){
 // Residential Address postal code
 
 function httpGet_(my_residential)
-{	
+{
 
 	my_residential = document.getElementById("PostalCode_Residential_Address_Contact_Details").value;
-	
+
 	// take integer
 
 	// plug integer into  this thing https://developers.onemap.sg/commonapi/search?searchVal=320014&returnGeom=Y&getAddrDetails=Y&pageNum=1
-	
+
 	my_String = "https://developers.onemap.sg/commonapi/search?searchVal=".concat(my_residential);
-	
+
 	my_String = my_String.concat("&returnGeom=Y&getAddrDetails=Y&pageNum=1");
-	
-	
+
+
 	// some sort of string concat to make the long string url
-	
+
 	// set theUrl = this new long url
 	theUrl = my_String;
-		
-	
+
+
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
     xmlHttp.send( null );
-	var1 =JSON.parse(xmlHttp.responseText)['results'][0]['BLK_NO'] 
-	var2 =JSON.parse(xmlHttp.responseText)['results'][0]['ROAD_NAME'] 
+	var1 =JSON.parse(xmlHttp.responseText)['results'][0]['BLK_NO']
+	var2 =JSON.parse(xmlHttp.responseText)['results'][0]['ROAD_NAME']
 	var3 =JSON.parse(xmlHttp.responseText)['results'][0]['BUILDING']
-	
+
 	result =  (var1 + " " + var2 + " " + var3)
 	//document.getElementById("Mailing_Address_Contact_Details").value  = JSON.parse(xmlHttp.responseText)['results'][0]['BLK_NO']
 	document.getElementById("Residential_Address_Contact_Details").value  = result;
-	
-	
+
+
     return xmlHttp.responseText;
 }
 
@@ -3177,7 +3177,7 @@ $(document).ready(function(){
 
 <script>
 window.onload = function() {
- 
+
   // Retrieve the users name.
   <!-- var salutation = localStorage.getItem('Name_Options_Value'); -->
   var name = localStorage.getItem('name_ID_');
@@ -3186,9 +3186,9 @@ window.onload = function() {
   var Home = localStorage.getItem('Home_No_');
   <!-- var ContactNo = localStorage.getItem('MobileNo_ContactNo'); -->
   <!-- var ContactNo_ID = localStorage.getItem('TelID'); -->
-  
- 
-  
+
+
+
 	<!-- document.getElementById('NAME__').value = salutation;  -->
    document.getElementById('Name_ID').value = name;
    document.getElementById('email_ID').value = email;
