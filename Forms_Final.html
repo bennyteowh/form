@@ -37,35 +37,18 @@
       <div class="card-body">
 	 <!--Form rows-->
             <div class="form-group row">
-           <label class="col-sm-3 col-form-label" for="name">Name</label>
-		<div class="col-sm-9">
-                         <div class="row type-2">
-                            <div class="col-xs-12 col-sm-3">
-                                <select class="form-control " id="NAME__" name="NAME" required>
-                                    <option value="">Please Select</option>
-                                    <option value="Dr">Dr</option>
-                                    <option value="Mr">Mr</option>
-                                    <option value="Mrs">Mrs</option>
-                                    <option value="Ms">Ms</option>
-                                    <option value="Mdm">Mdm</option>
-                                </select>
-								<div class="invalid-feedback">
-											Please choose
-								</div>
-                            </div>
-                            <div class="col-xs-12 col-sm-9">
-                                <input type="text" class="form-control " id="Name_ID" placeholder="Full name as in NRIC or Passport" name="Name" onblur=""  required>
-                            <div class="valid-feedback"></div>
-      <div class="invalid-feedback">Please Insert your name</div>
-							</div>
-                        </div>
-         </div>
+               <label class="col-sm-3 col-form-label" for="name">Name</label>
+              		<div class="col-sm-9">
+                        <input type="text" class="form-control " id="Name_ID" placeholder="Full name as in NRIC or Passport" name="Name" onblur=""  required disabled>
+                                          <div class="valid-feedback"></div>
+                                          <div class="invalid-feedback">Please Insert your name</div>
+                       </div>
             </div>
             <!--standard field code to copy start-->
             <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="idnum">ID/Passport</label>
               <div class="col-sm-9">
-                <input type="text" class="form-control" id="idnum" Placeholder="Eg. S12345678A" pattern="(?=.*\d).{9,}"  required>
+                <input type="text" class="form-control" id="idnum" Placeholder="Eg. S12345678A" pattern="(?=.*\d).{9,}"  value="S7819832R" required disabled>
 				<div class="invalid-feedback">
 										Please insert your NRIC
 							</div>
@@ -75,7 +58,7 @@
             <div class="form-group row">
              <label class="col-sm-3 col-form-label" for="email">Email Addresses</label>
 			  <div class ="col-sm-9">
-              <input type="email" name="email" class="form-control" id="email_ID" placeholder="Eg. Example@abc.com " onblur="getParams()" required >
+              <input type="email" name="email" class="form-control" id="email_ID" placeholder="Eg. Example@abc.com " onblur="getParams()" required disabled>
 			  <div class="invalid-feedback">
 										Please insert a valid Email Address
 			</div>
@@ -84,7 +67,7 @@
 			<div class ="form-group row">
               <label class ="col-sm-3 col-form-label" for="MobileNo">Mobile Number</label>
 			  <div class = "col-sm-9">
-              <input type="tel" name="MobileNo" class="form-control" id="MobileNo" placeholder="Eg. +(65)98765432" required>
+              <input type="tel" name="MobileNo" class="form-control" id="MobileNo" placeholder="Eg. +(65)98765432" required disabled>
 			  <div class="invalid-feedback">
 								Please enter your mobile No
 			  </div>
@@ -94,7 +77,7 @@
 			<div class="form-group row">
               <label class="col-sm-3 col-form-label" for="HomeNo">Home Number</label>
 			  <div class = "col-sm-9">
-              <input type="tel" name="HomeNo" class="form-control" id="HomeNo" placeholder="Eg. 987654321" required>
+              <input type="tel" name="HomeNo" class="form-control" id="HomeNo" placeholder="63875433" value="" required disabled> <!--weird placeholder-->
 			   <div class="invalid-feedback">
 								Please enter your Home No
 			  </div>
@@ -103,10 +86,10 @@
              <div class="form-group row">
             <label class="col-sm-3 col-form-label" for="nationality">Nationality</label>
               <div class="col-sm-9">
-                <select  class="form-control " name="SelectCountry_PersonalDetails" required>
+                <select  class="form-control " name="SelectCountry_PersonalDetails" required disabled>
                   <!-- <option selected>Choose...</option> -->
 									 <option value="">Select Country </option>
-									<option value="240">SINGAPORE</option>
+									<option selected="selected" value="240">SINGAPORE</option>
 									 <option value="129">MALAYSIA</option>
 									 <option value="100">INDONESIA</option>
 									 <option value="96">HONG KONG</option>
@@ -368,7 +351,7 @@
             <div class="form-group row"> <!-- Date input -->
               <label class="col-sm-3 control-label" for="date">Date of Birth</label>
               <div class="col-sm-9 ">
-                <input  class="form-control" id="date" placeholder="MM/DD/YYY" name="date" type="text"  required>
+                <input  class="form-control" id="date" placeholder="MM/DD/YYY" value="03/04/1978" name="date" type="text"  required disabled>
 				<span class="input-group-addon">
 					<span class="glyphicon glyphicon-time"></span>
 				</span>
@@ -383,7 +366,7 @@
 					<div class="radio radio-inline" >
 					<input type="radio" name="Are_You_Singapore_PR_Radio" id="Are_You_Singapore_PR" value="SingaporePR_Yes" required>
 					<label for="Yes" style="margin-right:15px;"> Yes </label>
-					<input type="radio" name="Are_You_Singapore_PR_Radio" id="Are_You_Singapore_PR" value="SingaporePR_No" />
+					<input type="radio" name="Are_You_Singapore_PR_Radio" id="Are_You_Singapore_PR" value="SingaporePR_No" checked disabled />
 					<label for="No"> No </label>
 					</div>
             </div>
@@ -391,11 +374,11 @@
 			<div class="form-group row"> <!-- Place of birth input -->
 				  <label class="col-sm-3 control-label" for="Place">Place of Birth </label>
 				  <div class="col-sm-9">
-                <select id="PlaceOfBirth" class="form-control" name="placeofbirth" required>
+                <select id="PlaceOfBirth" class="form-control" name="placeofbirth" required disabled>
 								<!-- <option selected>Choose...</option> -->
 									<option value="">Select Country</option>
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
-									 <option value="240">SINGAPORE</option>
+									 <option selected="selected" value="240">SINGAPORE</option>
 									 <option value="129">MALAYSIA</option>
 									 <option value="100">INDONESIA</option>
 									 <option value="96">HONG KONG</option>
@@ -648,11 +631,11 @@
 						 <div class="row type-2">
                             <div class="col-xs-12 col-sm-7">
 						<!-- <select class="form-control" id="HighestEducation" required> -->
-						<select class="form-control " name="HighestEducation" id="Highest_Education_ID" required>
+						<select class="form-control " name="HighestEducation" id="Highest_Education_ID" required disabled>
 						  <option value="">Please select</option>
 						  <option value="0_Level">O-level</option>
 						  <option value="Diploma">Diploma</option>
-						  <option value="Degree">Degree</option>
+						  <option selected="selected" value="Degree">Degree</option>
 						  <option value="Other_Highest_Education">Other</option>
 						</select>
 						<div class="invalid-feedback">
@@ -668,7 +651,7 @@
     </div>  <!-- End of FirstCollapseOne -->
   </div> <!-- close the first card-->
 </div> <!--close the first tab-->
-
+<br>
   <!--Second Card-->
   <div class="card mb-3">
     <div class="p-3 mb-2 bg-light" id="headingTwo">
