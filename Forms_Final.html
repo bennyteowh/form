@@ -747,8 +747,8 @@
                 </div> <!-- End of Collpase two -->
               </div> <!-- End of Card two-->
 			  <!-- Start of Card Three -->
-			  <div class="card bg-light mb-3">
-    <div class="p-3 mb-2" id="headingThree">
+			  <div class="card mb-3">
+    <div class="p-3 mb-2 bg-light" id="headingThree">
       <h5 class="mb-0">
         <div class="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="False" aria-controls="collapseThree">
        Contact Details
@@ -1034,8 +1034,8 @@
 			  <div class="form-group row ">
 			  <div class="col-md-12">
               <label for="Residential_Address_label">Select if Mailing address is different from Residential Address</label>
-              <div class="radio radio-inline" >
-					<input type="radio" name="Residential_Address_Radio" id="Residential_Address_" value="Residential_Address_Yes" required>
+              <div class="radio radio-inline">
+					<input type="radio" name="Residential_Address_Radio" id="Residential_Address_" value="Residential_Address_Yes" required disabled>
 					<label for="Yes" style="margin-right:20px;"> Yes </label>
 					<input type="radio" name="Residential_Address_Radio" id="Residential_Address_" value="Residential_Address_No" checked disabled/>
 					<label for="No"> No </label>
@@ -1330,10 +1330,10 @@
                 </div> <!-- End of Collpase Three -->
               </div> <!-- End of Card Three-->
 			  <!-- Start of Card Fourth-->
-			    <div class="card border-secondary mb-3">
-    <div class="p-3 mb-2 bg-danger text-white" id="headingFourth">
+			    <div class="card mb-3">
+    <div class="p-3 mb-2 bg-light" id="headingFourth">
       <h5 class="mb-0">
-        <div class="text-white" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="False" aria-controls="collapseFourth">
+        <div class="" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="False" aria-controls="collapseFourth">
           Employment Details
         </div>
       </h5>
@@ -1344,11 +1344,11 @@
               <label class="col-md-3 control-label" for="Are_You_Business_Partner_label">Select only One</label>
               <div class="col-md-9" >
 			  <div class="radio radio-inline" >
-					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Employed_Select_Only_One" required>
+					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Employed_Select_Only_One" required >
 					<label for="Employed" style="margin-right:20px;"> Employed </label>
-					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Self_Employed_Select_Only_One" />
+					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Self_Employed_Select_Only_One" disabled/>
 					<label for="Self_Employed" style="margin-right:20px;"> Self-Employed </label>
-					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Unemployed_Select_Only_One" />
+					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Unemployed_Select_Only_One" disabled />
 					<label for="Unemployed" style="margin-right:20px;"> Unemployed </label>
 			  </div>
 			  <div id="Select_Only_One_OwnerBox_Employed" style="display: none;"><em></em>
@@ -1356,7 +1356,7 @@
 			  	<div class="form-group row">
               <label class="col-md-3 control-label" for="CompanyName_Label">Company Name: </label>
               <div class="col-sm-9">
-					<input type="text" class="form-control" id="CompanyName" name="CompanyName" placeholder=""  >
+					<input type="text" class="form-control" id="CompanyName" name="CompanyName" placeholder="" value="Hewlett Packard Enterprise" disabled>
 					<div class="invalid-feedback">
 								Please enter your Company Name
 			  </div>
@@ -1366,7 +1366,7 @@
 				<div class="form-group row">
 				<label class="col-sm-3 control-label" for="Occupation_Label">Occupation </label>
 				<div class="col-sm-9">
-					<input type="text" class="form-control" name="Occupation" id="occupation_ID"  placeholder="" >
+					<input type="text" class="form-control" name="Occupation" id="occupation_ID"  placeholder="" value="Engineer" disabled>
 					<div class="invalid-feedback">
 								Please enter your Occupation
 				</div>
@@ -1376,7 +1376,7 @@
 			<div class="form-group row"> <!-- Start of Annual Income -->
               <label class="col-sm-3 control-label" for="AnnualIncome_Label">Annual income </label>
               <div class="col-sm-9">
-                <select class="form-control col-md-4" id="AnnualIncome" name="AnnualIncome" >
+                <select class="form-control" id="AnnualIncome" name="AnnualIncome" >
 						<option value=""> Please Select </option>
 						<option value="1"> <$30,000 </option>
 						<option value="2"> $30,000 - 60,000 </option>
@@ -1393,12 +1393,20 @@
 		 <!-- Start of Office Number -->
 		 <div class="form-group row">
               <label class="col-sm-3 control-label" for="OfficeNo_Label">Office Number</label>
-			  <div class="col-sm-3">
+			  <div class="col-sm-9">
               <input type="tel" class="form-control" id="OfficeNo" name="OfficeNo" placeholder="Eg. (+65)67890987">
             </div>
 			</div> <!--End of Office Number -->
 			<!-- Start of Country -->
 			<div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="CompanyPostalCode_Label">Postal Code</label>
+          <input type="text" class="form-control" id="CompanyPostalCode" name="CompanyPostalCode"  >
+          <div class="invalid-feedback">
+                  Please enter your postal code
+          </div>
+                 <input type="button" class="btn btn-info btn-sm " value="Look up Address" id="Mailing_Address_LookUp_Address" a href=""><!--need to change this if button doesnt work-->
+        </div>
               <div class="form-group col-md-6">
                 <label for="CompanyAddress_Label">Company Address</label>
                 <input type="text" class="form-control" id="CompanyAddress" name="CompanyAddress" >
@@ -1412,7 +1420,7 @@
 								<!-- <option selected>Choose...</option> -->
                                      <!-- <option value="-1" disabled>-------------------------------</option> -->
                                      <option value="" >Select Country</option>
-									 <option value="240">SINGAPORE</option>
+									 <option selected="selected" value="240">SINGAPORE</option>
 									 <option value="129">MALAYSIA</option>
 									 <option value="100">INDONESIA</option>
 									 <option value="96">HONG KONG</option>
@@ -1659,13 +1667,7 @@
 								Please select your country
 			  </div>
               </div>
-              <div class="form-group col-md-2">
-                <label for="CompanyPostalCode_Label">Postal Code</label>
-                <input type="text" class="form-control" id="CompanyPostalCode" name="CompanyPostalCode"  >
-				<div class="invalid-feedback">
-								Please enter your postal code
-			  </div>
-              </div>
+
             </div><!-- End of Postal Code -->
 			 <!-- Start of Business Partner -->
 			  <div class="form-group row">
@@ -1678,7 +1680,7 @@
 					<label for="No"> No </label>
 			  </div>
              <div id="Business_OwnerBox" style="display: none;"><em></em>
-					<input class="form-control" type="text" name="Business_Owner" size="40" placeholder="Please state the industry of your businesses if  'YES'" /></div></td>
+					<input class="form-control" type="text" name="Business_Owner" size="40" placeholder="Please state the industry" /></div></td>
 			 </div>
             </div> <!-- End of busniess Partner -->
 			  </div>
@@ -1729,6 +1731,7 @@
             </div>
 			</div> <!--End of Office Number -->
 			<!-- Start of Country -->
+
 			<div class="form-row">
               <div class="form-group col-md-6">
                 <label for="CompanyAddress_Label">Company Address</label>
@@ -1993,9 +1996,11 @@
               <div class="form-group col-md-2">
                 <label for="CompanyPostalCode_Label">Postal Code</label>
                 <input type="text" class="form-control" id="CompanyPostalCode" name="CompanyPostalCode" >
+
 				<div class="invalid-feedback">
 								Please enter your postal code
 			  </div>
+
               </div>
             </div><!-- End of Postal Code -->
 			 <!-- Start of Business Partner -->
