@@ -1376,11 +1376,11 @@
 			<div class="form-group row"> <!-- Start of Annual Income -->
               <label class="col-sm-3 control-label" for="AnnualIncome_Label">Annual income </label>
               <div class="col-sm-9">
-                <select class="form-control" id="AnnualIncome" name="AnnualIncome" >
+                <select class="form-control" id="AnnualIncome" name="AnnualIncome" disabled>
 						<option value=""> Please Select </option>
 						<option value="1"> <$30,000 </option>
 						<option value="2"> $30,000 - 60,000 </option>
-						<option value="3"> $60,001 - $100,000 </option>
+						<option selected="selected" value="3"> $60,001 - $100,000 </option>
 						<option value="4"> $100,001 - $150,000 </option>
 						<option value="5"> $150,001 - $300,000 </option>
 						<option value="6"> >$300,000 </option>
@@ -1405,7 +1405,7 @@
           <div class="invalid-feedback">
                   Please enter your postal code
           </div>
-                 <input type="button" class="btn btn-info btn-sm " value="Look up Address" id="Mailing_Address_LookUp_Address" a href=""><!--need to change this if button doesnt work-->
+                 <input type="button" class="btn btn-info btn-sm " value="Look up Address" id="Company_Address_LookUp_Address" a href=""><!--need to change this if button doesnt work-->
         </div>
               <div class="form-group col-md-6">
                 <label for="CompanyAddress_Label">Company Address</label>
@@ -2098,7 +2098,7 @@
 					  <label class="col-sm-3 control-label" for="Trading_Objective" label="Trading_Objective_Field">Trading Objective </label>
 					  <div class="col-sm-9">
 					   <div class="row type-2">
-                            <div class="col-xs-12 col-sm-5">
+                           
                                 <select class="form-control " id="Trading_Objective" name="Trading_Objective_options" type="" required>
                                     <option value="">Please Select</option>
                                     <option value="LongTermInvestment">Long Term Investment</option>
@@ -2110,7 +2110,7 @@
 								<div class="invalid-feedback">
 											Please select
 								</div>
-                            </div>
+                            
                             <div class="col-xs-12 col-sm-6">
                                 <input type="text" class="form-control " id="Trading_Objective_Others" placeholder="Please state if 'OTHERS'" name="Trading_Objective" >
 								<!-- <div id="Trading_Objective_Box" style="display: none;"><em></em>
