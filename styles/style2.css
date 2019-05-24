@@ -1,7 +1,7 @@
 /*#changed on 23May*/
 .wrapper {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 200px;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -13,7 +13,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width:100%;
+  width: auto;
   height:200px;
   background-color: white;
 }
