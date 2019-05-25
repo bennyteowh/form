@@ -21,7 +21,7 @@
 <body >
 <div class="container" style="margin-top:20px;">
 <!-- class= "was-validated">-->
-<form  class="needs-validation" novalidate id="contactDetails"  method="" action="Verfy_Information.html" >
+<form  class="needs-validation" novalidate id="applndetails"  method="" action="Verfy_Information.html" >
 <!-- Accordian collapsible-->
 <div id="accordion">
 <!-- First Card-->
@@ -2340,7 +2340,7 @@
 
 			  <div class="form-group form-footer">
                     <div class="btn-groups">
-                        <input type="button" class="btn btn-info" value="Review Submission" onclick="relocate_Verify()">
+                        <input type="submit" class="btn btn-info" value="Review Submission" onclick="relocate_Verify()">
 
 						<!-- <input class="btn btn-info" type="reset" value="Reset"> -->
 						<input type="submit" class="btn btn-info" value="Back" a href="" onclick="goBack()">
@@ -2782,23 +2782,51 @@ $(document).ready(function(){
 </script>
 <!-- #changed on 21May end-->
 
+<script >
+//https://blog.teamtreehouse.com/storing-data-on-the-client-with-localstorage
+//to get value and save into LS
+     window.onload = function() {
+
+  // Check for LocalStorage support.
+  if (localStorage) {
+
+    // Add an event listener for form submissions
+    document.getElementById('applndetails').addEventListener('submit', function() {
+      // Get the value of the name field.
+
+    var officeno = document.getElementById('OfficeNo').value;
+    var coypostcode = document.getElementById('CompanyPostalCode').value;
+    var coyaddr = document.getElementById('CompanyAddress').value;
+
+//save the value into localStorage
+	  localStorage.setItem('lsofficeno', officeno);
+	  localStorage.setItem('lscoypost', coypostcode);
+	  localStorage.setItem('lscoyaddr', coyaddr);
+	 });
+
+  }
+
+}
+</script>
+
+
+<!--
 <script>
 window.onload = function() {
   // Retrieve the users name.
-  <!-- var salutation = localStorage.getItem('Name_Options_Value'); -->
+
   var name = localStorage.getItem('name_ID_');
   var email = localStorage.getItem('email_ID_');
   var Mobile = localStorage.getItem('Mobile_No_');
   var Home = localStorage.getItem('Home_No_');
-  <!-- var ContactNo = localStorage.getItem('MobileNo_ContactNo'); -->
-  <!-- var ContactNo_ID = localStorage.getItem('TelID'); -->
-	<!-- document.getElementById('NAME__').value = salutation;  -->
+
    document.getElementById('Name_ID').value = name;
    document.getElementById('email_ID').value = email;
    document.getElementById('MobileNo').value = Mobile;
    document.getElementById('HomeNo').value = Home;
 }
 </script>
+-->
 <script>
     function goBack() {
       window.history.back();

@@ -1131,7 +1131,7 @@
 		 <div class="form-group row">
               <label class="col-sm-3 control-label" for="OfficeNo_Label">Office Number</label>
 			  <div class="col-sm-9">
-              <input type="tel" class="form-control" id="" name="" placeholder="" value="" disabled >
+              <input type="tel" class="form-control" id="OfficeNo" name="" placeholder="" value="" disabled >
             </div>
 			</div> <!--End of Office Number -->
 
@@ -1141,7 +1141,7 @@
 			<div class="form-row">
               <div class="form-group col-md-6">
                 <label for="CompanyAddress_Label">Company Address</label>
-                <input type="text" class="form-control" id="" name="" value= "" disabled >
+                <input type="text" class="form-control" id="Company_Address_LookUp_Address" name="" value= "" disabled >
 				<div class="invalid-feedback">
 								Please enter your company address
 			  </div>
@@ -1403,7 +1403,7 @@
               </div>
               <div class="form-group col-md-2">
                 <label for="CompanyPostalCode_Label">Postal Code</label>
-                <input type="text" class="form-control" id="" name=""  value= "" disabled >
+                <input type="text" class="form-control" id="CompanyPostalCode" name=""  value= "" disabled >
 				<div class="invalid-feedback">
 								Please enter your postal code
 			  </div>
@@ -1831,6 +1831,7 @@
 </div>
 
 <!-- #changed on 23May start-->
+<!--
 <script>
  window.onload = function() {
 
@@ -1843,9 +1844,6 @@
     document.getElementById('Verify_Name_ID').value = Verify_Name;
 	document.getElementById('EmailAddress_Verify_ID').value = Verify_Email;
 	   document.getElementById('Confirmation_MobileNo_ID').value = Verify_Mobile;
-
-
-
 
 	   var Verify_officeNo = localStorage.getItem('OfficeNo');
 
@@ -1862,6 +1860,21 @@
 
 
  }
+</script>
+-->
+<script>
+//To get from LS and display value
+window.onload = function() {
+  // Retrieve the users name.
+  var officeno = localStorage.getItem('lsofficeno');
+  var coypostcode = localStorage.getItem('lscoypost');
+  var coyaddr = localStorage.getItem('lscoyaddr');
+
+   document.getElementById('OfficeNo').value = officeno;
+   document.getElementById('CompanyPostalCode').value = coypostcode;
+   document.getElementById('Company_Address_LookUp_Address').value = coyaddr;
+
+}
 </script>
 <!-- #changed on 23May end-->
 
