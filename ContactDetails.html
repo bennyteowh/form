@@ -73,12 +73,13 @@
  <div class="form-group row">
    <div class="col-md-12">
      <label for="" style="">Otherwise, apply using</label><br>
-     <input type="submit" class="btn btn-info" value="MyInfo / SingPass" onclick="relocate_myinfo()">
+     <input type="button" class="btn btn-info" value="MyInfo / SingPass" onclick="relocate_myinfo()">
+
    </div>
  </div>
   <div class="form-group row">
       <div class="card-footer col-md-12">
-          <button type="submit" class="btn btn-link" value="" onclick="window.location.href='relocate_Forms_Final.html'">I do not have any of the above</button>
+          <button type="button" class="btn btn-link" value="" onclick="">I do not have any of the above</button>
         </div>
       </div>
   </div> <!--Card body-->
@@ -117,7 +118,7 @@
 </script>
 <script>
 // Disable form submissions if there are invalid fields
-(function() {
+function() {
   'use strict';
   window.addEventListener('load', function() {
     // Get the forms we want to add validation styles to
@@ -133,25 +134,19 @@
       }, false);
     });
   }, false);
-})();
+}
 </script>
 <!-- Login Options Scripts-->
 <script>
+  function relocate_myinfo()
+  {
+       location.href = 'myinfo.html';
+  }
 
-function relocate_myinfo()
-{
-     location.href = 'myinfo.html';
-}
-
-function relocate_Verfy_Information()
-{
-	location.href = 'Verfy_Information.html';
-}
-
-function relocate_Forms_Final()
-{
-	location.href = 'Forms_Final.html';
-}
+  function relocate_Forms_Final()
+  {
+  	location.href = 'Forms_Final.html';
+  }
 </script>
 
 
