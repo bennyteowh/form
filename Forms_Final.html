@@ -661,10 +661,12 @@
         </div>
       </h5>
     </div>
+
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
-		 <div class="form-group row">
-				<!-- Start Net Worth 
+	<!-- Start Net Worth
+  		 <div class="form-group row">
+
               <label class="col-sm-3 control-label" for="Net Worth">Net Worth </label>
               <div class="col-sm-9">
                 <select class="form-control  col-md-4" name="Networth" required>
@@ -743,9 +745,10 @@
               </div>
             </div>
         </div><!-- End of Source Funds -->
-                  </div> <!-- End of Card Body -->
-                </div> <!-- End of Collpase two -->
-              </div> <!-- End of Card two-->
+                  </div>
+                </div> <!-- End of Card Body -->
+              </div> <!-- End of Collpase two -->
+            </div><!-- End of Card two-->
 			  <!-- Start of Card Three -->
 			  <div class="card mb-3">
     <div class="p-3 mb-2 bg-light" id="headingThree">
@@ -1344,14 +1347,14 @@
               <label class="col-md-3 control-label" for="Are_You_Business_Partner_label">Select only One</label>
               <div class="col-md-9" >
 			  <div class="radio radio-inline" >
-					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Employed_Select_Only_One" required >
+					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Employed_Select_Only_One" checked required >
 					<label for="Employed" style="margin-right:20px;"> Employed </label>
 					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Self_Employed_Select_Only_One" disabled/>
 					<label for="Self_Employed" style="margin-right:20px;"> Self-Employed </label>
 					<input type="radio" name="Select_Only_Radio" id="Select_Only_One" value="Unemployed_Select_Only_One" disabled />
 					<label for="Unemployed" style="margin-right:20px;"> Unemployed </label>
 			  </div>
-			  <div id="Select_Only_One_OwnerBox_Employed" style="display: none;"><em></em>
+			  <div id="Select_Only_One_OwnerBox_Employed" style=""><em></em>
 			    <!-- Start of Company Name  -->
 			  	<div class="form-group row">
               <label class="col-md-3 control-label" for="CompanyName_Label">Company Name: </label>
@@ -1397,7 +1400,7 @@
               <input type="tel" class="form-control" id="OfficeNo" name="OfficeNo" placeholder="Eg. (+65)67890987">
             </div>
 			</div> <!--End of Office Number -->
-			<!-- Start of Country -->
+			<!--Start of Employed Address-->
 			<div class="form-row">
         <div class="form-group col-md-2">
           <label for="CompanyPostalCode_Label">Postal Code</label>
@@ -1410,9 +1413,9 @@
               <div class="form-group col-md-6">
                 <label for="CompanyAddress_Label">##Company Address##</label>
                 <input type="text" class="form-control" id="CompanyAddress" name="CompanyAddress" onblur="httpGet(120)" required>
-				<div class="invalid-feedback">
-								Please enter your company address
-			  </div>
+        				<div class="invalid-feedback">
+        								Please enter your company address
+        			  </div>
               </div>
               <div class="form-group col-md-4">
                 <label for="Country_Company_Label">Country</label>
@@ -1663,361 +1666,14 @@
                                      <option value="238">ZAMBIA</option>
                                      <option value="239">ZIMBABWE</option> -->
                 </select>
-				<div class="invalid-feedback">
-								Please select your country
-			  </div>
+        				<div class="invalid-feedback">
+        								Please select your country
+        			  </div>
               </div>
+        </div><!-- End of Employed Address-->
 
-            </div><!-- End of Postal Code -->
-			 <!-- Start of Business Partner 
-			  <div class="form-group row">
-              <label class="col-sm-5 control-label" for="Are_You_Business_Partner_label">Are you the business owner/partner</label>
-              <div class="col-sm-7" >
-			  <div class="radio radio-inline" >
-					<input type="radio" name="BusinessOwner_Partner_Radio" id="Business_Owner_Partner" value="Business_Owner_Yes" >
-					<label for="Yes"> Yes </label>
-					<input type="radio" name="BusinessOwner_Partner_Radio" id="Business_Owner_Partner" value="Business_Owner_No" />
-					<label for="No"> No </label>
-			  </div>
-             <div id="Business_OwnerBox" style="display: none;"><em></em>
-					<input class="form-control" type="text" name="Business_Owner" size="40" placeholder="Please state the industry" /></div></td>
-			 </div>
-            </div> End of busniess Partner -->
-			  </div>
-			  <div id="Select_Only_One_OwnerBox_Self_Employed" style="display: none;"><em></em>
-						  <!-- Start of Company Name  -->
-			<div class="form-group row">
-              <label class="col-md-3 control-label" for="CompanyName_Label">Company Name: </label>
-              <div class="col-sm-9">
-					<input type="text" class="form-control" id="CompanyName" placeholder="" name="CompanyName"  >
-					<div class="invalid-feedback">
-								Please enter your Company Name
-			  </div>
-              </div>
-            </div> <!-- End of Company Name   -->
-			  	  <!-- Start of Occupation  -->
-				<div class="form-group row">
-				<label class="col-sm-3 control-label" for="Occupation_Label">Occupation </label>
-				<div class="col-sm-9">
-					<input type="text" class="form-control" id="occupation_ID" placeholder="" name="Occupation_ID" >
-					<div class="invalid-feedback">
-								Please enter your Occupation
-				</div>
-				</div>
-				</div> <!-- End of Occupation -->
-				<!-- Start of Annual Income -->
-			<div class="form-group row"> <!-- Start of Annual Income -->
-              <label class="col-sm-3 control-label" for="AnnualIncome_Label">Annual income </label>
-              <div class="col-sm-9">
-                <select class="form-control col-md-4" id="AnnualIncome" name="AnnualIncome" >
-						<option value=""> Please Select </option>
-						<option value="1"> <$30,000 </option>
-						<option value="2"> $30,000 - 60,000 </option>
-						<option value="3"> $60,001 - $100,000 </option>
-						<option value="4"> $100,001 - $150,000 </option>
-						<option value="5"> $150,001 - $300,000 </option>
-						<option value="6"> >$300,000 </option>
-				</select>
-				<div class="invalid-feedback">
-								Please Select
-			  </div>
-		 </div>
-		 </div> <!-- End of Annual Income -->
-		 <!-- Start of Office Number -->
-		 <div class="form-group row">
-              <label class="col-sm-3 control-label" for="OfficeNo_Label">Office Number</label>
-			  <div class="col-sm-3">
-              <input type="tel" class="form-control" id="OfficeNo" placeholder="Eg. (+65)67890987" name="OfficeNo">
-            </div>
-			</div> <!--End of Office Number -->
-			<!-- Start of Country -->
-
-			<div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="CompanyAddress_Label">Company Address</label>
-                <input type="text" class="form-control" id="CompanyAddress" name="CompanyAddress" >
-				<div class="invalid-feedback">
-								Please enter your company address
-			  </div>
-              </div>
-              <div class="form-group col-md-4">
-                <label for="Country_Company_Label">Country</label>
-                <select id="Country_Company" class="form-control" name="Country_Company" >
-								<!-- <option selected>Choose...</option> -->
-                                     <!-- <option value="-1" disabled>-------------------------------</option> -->
-                                     <option value="" >Select Country</option>
-									 <option value="240">SINGAPORE</option>
-									 <option value="129">MALAYSIA</option>
-									 <option value="100">INDONESIA</option>
-									 <option value="96">HONG KONG</option>
-									 <option value="44">CHINA</option>
-									 <option value=""> --------------------------</option>
-                                     <option value="1">AFGHANISTAN</option>
-                                     <option value="2">ALBANIA</option>
-                                     <option value="3">ALGERIA</option>
-                                     <option value="4">AMERICAN SAMOA</option>
-                                     <option value="5">ANDORRA</option>
-                                     <option value="6">ANGOLA</option>
-                                     <option value="7">ANGUILLA</option>
-                                     <option value="8">ANTARCTICA</option>
-                                     <option value="9">ANTIGUA AND BARBUDA</option>
-                                     <option value="10">ARGENTINA</option>
-                                     <option value="11">ARMENIA</option>
-                                     <option value="12">ARUBA</option>
-                                     <option value="13">AUSTRALIA</option>
-                                     <option value="14">AUSTRIA</option>
-                                     <option value="15">AZERBAIJAN</option>
-                                     <option value="16">BAHAMAS</option>
-                                     <option value="17">BAHRAIN</option>
-                                     <option value="18">BANGLADESH</option>
-                                     <option value="19">BARBADOS</option>
-                                     <option value="20">BELARUS</option>
-                                     <option value="21">BELGIUM</option>
-                                     <option value="22">BELIZE</option>
-                                     <option value="23">BENIN</option>
-                                     <option value="24">BERMUDA</option>
-                                     <option value="25">BHUTAN</option>
-                                     <option value="26">BOLIVIA</option>
-                                     <option value="27">BOSNIA AND HERZEGOVINA</option>
-                                     <option value="28">BOTSWANA</option>
-                                     <option value="29">BOUVET ISLAND</option>
-                                     <option value="30">BRAZIL</option>
-                                     <option value="31">BRITISH INDIAN OCEAN TERRITORY</option>
-                                     <option value="32">BRUNEI DARUSSALAM</option>
-                                     <option value="33">BULGARIA</option>
-                                     <option value="34">BURKINA FASO</option>
-                                     <option value="35">BURUNDI</option>
-                                     <option value="36">CAMBODIA</option>
-                                     <option value="37">CAMEROON</option>
-                                     <option value="38">CANADA</option>
-                                     <option value="39">CAPE VERDE</option>
-                                     <option value="40">CAYMAN ISLANDS</option>
-                                     <option value="41">CENTRAL AFRICAN REPUBLIC</option>
-                                     <option value="42">CHAD</option>
-                                     <option value="43">CHILE</option>
-                                     <option value="45">CHRISTMAS ISLAND</option>
-                                     <option value="46">COCOS (KEELING) ISLANDS</option>
-                                     <option value="47">COLOMBIA</option>
-                                     <option value="48">COMOROS</option>
-                                     <option value="49">CONGO</option>
-                                     <option value="50">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
-                                     <option value="51">COOK ISLANDS</option>
-                                     <option value="52">COSTA RICA</option>
-                                     <option value="53">COTE D'IVOIRE</option>
-                                     <option value="54">CROATIA</option>
-                                     <option value="55">CUBA</option>
-                                     <option value="56">CYPRUS</option>
-                                     <option value="57">CZECH REPUBLIC</option>
-                                     <option value="58">DENMARK</option>
-                                     <option value="59">DJIBOUTI</option>
-                                     <option value="60">DOMINICA</option>
-                                     <option value="61">DOMINICAN REPUBLIC</option>
-                                     <option value="62">ECUADOR</option>
-                                     <option value="63">EGYPT</option>
-                                     <option value="64">EL SALVADOR</option>
-                                     <option value="65">EQUATORIAL GUINEA</option>
-                                     <option value="66">ERITREA</option>
-                                     <option value="67">ESTONIA</option>
-                                     <option value="68">ETHIOPIA</option>
-                                     <option value="69">FALKLAND ISLANDS (MALVINAS)</option>
-                                     <option value="70">FAROE ISLANDS</option>
-                                     <option value="71">FIJI</option>
-                                     <option value="72">FINLAND</option>
-                                     <option value="73">FRANCE</option>
-                                     <option value="74">FRENCH GUIANA</option>
-                                     <option value="75">FRENCH POLYNESIA</option>
-                                     <option value="76">FRENCH SOUTHERN TERRITORIES</option>
-                                     <option value="77">GABON</option>
-                                     <option value="78">GAMBIA</option>
-                                     <option value="79">GEORGIA</option>
-                                     <option value="80">GERMANY</option>
-                                     <option value="81">GHANA</option>
-                                     <option value="82">GIBRALTAR</option>
-                                     <option value="83">GREECE</option>
-                                     <option value="84">GREENLAND</option>
-                                     <option value="85">GRENADA</option>
-                                     <option value="86">GUADELOUPE</option>
-                                     <option value="87">GUAM</option>
-                                     <option value="88">GUATEMALA</option>
-                                     <option value="89">GUINEA</option>
-                                     <option value="90">GUINEA-BISSAU</option>
-                                     <option value="91">GUYANA</option>
-                                     <option value="92">HAITI</option>
-                                     <option value="93">HEARD ISLAND AND MCDONALD ISLANDS</option>
-                                     <option value="94">HOLY SEE (VATICAN CITY STATE)</option>
-                                     <option value="95">HONDURAS</option>
-                                     <option value="96">HONG KONG</option>
-                                     <option value="97">HUNGARY</option>
-                                     <option value="98">ICELAND</option>
-									 <option value="99">INDIA</option>
-                                     <option value="101">IRAN, ISLAMIC REPUBLIC OF</option>
-                                     <option value="102">IRAQ</option>
-                                     <option value="103">IRELAND</option>
-                                     <option value="278">ISLE OF MAN</option>
-                                     <option value="104">ISRAEL</option>
-                                     <option value="105">ITALY</option>
-                                     <option value="106">JAMAICA</option>
-                                     <option value="107">JAPAN</option>
-                                     <option value="108">JORDAN</option>
-                                     <option value="109">KAZAKHSTAN</option>
-                                     <option value="110">KENYA</option>
-                                     <option value="111">KIRIBATI</option>
-                                     <option value="112">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</option>
-                                     <option value="113">KOREA, REPUBLIC OF</option>
-                                     <option value="114">KUWAIT</option>
-                                     <option value="115">KYRGYZSTAN</option>
-                                     <option value="116">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
-                                     <option value="117">LATVIA</option>
-                                     <option value="118">LEBANON</option>
-                                     <option value="119">LESOTHO</option>
-                                     <option value="120">LIBERIA</option>
-                                     <option value="121">LIBYAN ARAB JAMAHIRIYA</option>
-                                     <option value="122">LIECHTENSTEIN</option>
-                                     <option value="123">LITHUANIA</option>
-                                     <option value="124">LUXEMBOURG</option>
-                                     <option value="125">MACAO</option>
-                                     <option value="126">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
-                                     <option value="127">MADAGASCAR</option>
-                                     <option value="128">MALAWI</option>
-                                     <option value="130">MALDIVES</option>
-                                     <option value="131">MALI</option>
-                                     <option value="132">MALTA</option>
-                                     <option value="133">MARSHALL ISLANDS</option>
-                                     <option value="134">MARTINIQUE</option>
-                                     <option value="135">MAURITANIA</option>
-                                     <option value="136">MAURITIUS</option>
-                                     <option value="137">MAYOTTE</option>
-                                     <option value="138">MEXICO</option>
-                                     <option value="139">MICRONESIA, FEDERATED STATES OF</option>
-                                     <option value="140">MOLDOVA, REPUBLIC OF</option>
-                                     <option value="141">MONACO</option>
-                                     <option value="142">MONGOLIA</option>
-                                     <option value="143">MONTSERRAT</option>
-                                     <option value="144">MOROCCO</option>
-                                     <option value="145">MOZAMBIQUE</option>
-                                     <option value="146">MYANMAR</option>
-                                     <option value="147">NAMIBIA</option>
-                                     <option value="148">NAURU</option>
-                                     <option value="149">NEPAL</option>
-                                     <option value="150">NETHERLANDS</option>
-                                     <option value="151">NETHERLANDS ANTILLES</option>
-                                     <option value="152">NEW CALEDONIA</option>
-                                     <option value="153">NEW ZEALAND</option>
-                                     <option value="154">NICARAGUA</option>
-                                     <option value="155">NIGER</option>
-                                     <option value="156">NIGERIA</option>
-                                     <option value="157">NIUE</option>
-                                     <option value="158">NORFOLK ISLAND</option>
-                                     <option value="159">NORTHERN MARIANA ISLANDS</option>
-                                     <option value="160">NORWAY</option>
-                                     <option value="161">OMAN</option>
-                                     <option value="162">PAKISTAN</option>
-                                     <option value="163">PALAU</option>
-                                     <option value="164">PALESTINIAN TERRITORY, OCCUPIED</option>
-                                     <option value="165">PANAMA</option>
-                                     <option value="166">PAPUA NEW GUINEA</option>
-                                     <option value="167">PARAGUAY</option>
-                                     <option value="168">PERU</option>
-                                     <option value="169">PHILIPPINES</option>
-                                     <option value="170">PITCAIRN</option>
-                                     <option value="171">POLAND</option>
-                                     <option value="172">PORTUGAL</option>
-                                     <option value="173">PUERTO RICO</option>
-                                     <option value="174">QATAR</option>
-                                     <option value="175">REUNION</option>
-                                     <option value="176">ROMANIA</option>
-                                     <option value="177">RUSSIAN FEDERATION</option>
-                                     <option value="178">RWANDA</option>
-                                     <option value="179">SAINT HELENA</option>
-                                     <option value="180">SAINT KITTS AND NEVIS</option>
-                                     <option value="181">SAINT LUCIA</option>
-                                     <option value="182">SAINT PIERRE AND MIQUELON</option>
-                                     <option value="183">SAINT VINCENT AND THE GRENADINES</option>
-                                     <option value="184">SAMOA</option>
-                                     <option value="185">SAN MARINO</option>
-                                     <option value="186">SAO TOME AND PRINCIPE</option>
-                                     <option value="187">SAUDI ARABIA</option>
-                                     <option value="188">SENEGAL</option>
-                                     <option value="189">SERBIA AND MONTENEGRO</option>
-                                     <option value="190">SEYCHELLES</option>
-                                     <option value="191">SIERRA LEONE</option>
-                                     <option value="193">SLOVAKIA</option>
-                                     <option value="194">SLOVENIA</option>
-                                     <option value="195">SOLOMON ISLANDS</option>
-                                     <option value="196">SOMALIA</option>
-                                     <option value="197">SOUTH AFRICA</option>
-                                     <option value="198">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
-                                     <option value="199">SPAIN</option>
-                                     <option value="200">SRI LANKA</option>
-                                     <option value="201">SUDAN</option>
-                                     <option value="202">SURINAME</option>
-                                     <option value="203">SVALBARD AND JAN MAYEN</option>
-                                     <option value="204">SWAZILAND</option>
-                                     <option value="205">SWEDEN</option>
-                                     <option value="206">SWITZERLAND</option>
-                                     <option value="207">SYRIAN ARAB REPUBLIC</option>
-                                     <option value="208">TAIWAN, PROVINCE OF CHINA</option>
-                                     <option value="209">TAJIKISTAN</option>
-                                     <option value="210">TANZANIA, UNITED REPUBLIC OF</option>
-                                     <option value="211">THAILAND</option>
-                                     <option value="212">TIMOR-LESTE</option>
-                                     <option value="213">TOGO</option>
-                                     <option value="214">TOKELAU</option>
-                                     <option value="215">TONGA</option>
-                                     <option value="216">TRINIDAD AND TOBAGO</option>
-                                     <option value="217">TUNISIA</option>
-                                     <option value="218">TURKEY</option>
-                                     <option value="219">TURKMENISTAN</option>
-                                     <option value="220">TURKS AND CAICOS ISLANDS</option>
-                                     <option value="221">TUVALU</option>
-                                     <option value="222">UGANDA</option>
-                                     <option value="223">UKRAINE</option>
-                                     <option value="224">UNITED ARAB EMIRATES</option>
-                                     <option value="225">UNITED KINGDOM</option>
-                                     <option value="226">UNITED STATES</option>
-                                     <option value="227">UNITED STATES MINOR OUTLYING ISLANDS</option>
-                                     <option value="228">URUGUAY</option>
-                                     <option value="229">UZBEKISTAN</option>
-                                     <option value="230">VANUATU</option>
-                                     <option value="231">VENEZUELA</option>
-                                     <option value="232">VIET NAM</option>
-                                     <option value="233">VIRGIN ISLANDS, BRITISH</option>
-                                     <option value="234">VIRGIN ISLANDS, U.S.</option>
-                                     <option value="235">WALLIS AND FUTUNA</option>
-                                     <option value="236">WESTERN SAHARA</option>
-                                     <option value="237">YEMEN</option>
-                                     <option value="238">ZAMBIA</option>
-                                     <option value="239">ZIMBABWE</option> -->
-                </select>
-				<div class="invalid-feedback">
-								Please select your country
-			  </div>
-              </div>
-              <div class="form-group col-md-2">
-                <label for="CompanyPostalCode_Label">Postal Code</label>
-                <input type="text" class="form-control" id="CompanyPostalCode" name="CompanyPostalCode" >
-
-				<div class="invalid-feedback">
-								Please enter your postal code
 			  </div>
 
-              </div>
-            </div><!-- End of Postal Code -->
-			 <!-- Start of Business Partner -->
-			  <div class="form-group row">
-              <label class="col-sm-5 control-label" for="Are_You_Business_Partner_label">Are you the business owner/partner</label>
-              <div class="col-sm-7" >
-			  <div class="radio radio-inline" >
-					<input type="radio" name="BusinessOwner_Partner_Radio2" id="Business_Owner_Partner2" value="Business_Owner_Yes2" >
-					<label for="Yes"> Yes </label>
-					<input type="radio" name="BusinessOwner_Partner_Radio2" id="Business_Owner_Partner2" value="Business_Owner_No2" />
-					<label for="No"> No </label>
-			  </div>
-             <div id="Business_OwnerBox2" style="display: none;"><em></em>
-					<input class="form-control" type="text" name="Business_Owner" size="40" placeholder="Please state the industry of your businesses if  'YES'" /></div></td>
-			 </div>
-            </div> <!-- End of busniess Partner -->
-			</div>
 					<div class="form-group row" id="Select_Only_Two_OwnerBox" style="display:none; ">
 			         <!-- <label class="col-sm-3 control-label" for="Unemployed_label">Unemployed </label> -->
               <div class="col-md-12">
@@ -2049,7 +1705,7 @@
 			 <!-- End of Card Body Fourth -->
                 </div> <!-- End of Collpase Fourth  -->
               </div> <!-- End of Card Fourth -->
-			  </div>
+
 			  <!--Fifth Card-->
   <div class="card mb-3">
     <div class="p-3 mb-2 bg-light" id="headingFifth">
@@ -2098,7 +1754,7 @@
 					  <label class="col-sm-3 control-label" for="Trading_Objective" label="Trading_Objective_Field">Trading Objective </label>
 					  <div class="col-sm-9">
 					   <div class="row type-2">
-                           
+
                                 <select class="form-control " id="Trading_Objective" name="Trading_Objective_options" type="" required>
                                     <option value="">Please Select</option>
                                     <option value="LongTermInvestment">Long Term Investment</option>
@@ -2110,7 +1766,7 @@
 								<div class="invalid-feedback">
 											Please select
 								</div>
-                            
+
                             <div class="col-xs-12 col-sm-6">
                                 <input type="text" class="form-control " id="Trading_Objective_Others" placeholder="Please state if 'OTHERS'" name="Trading_Objective" >
 								<!-- <div id="Trading_Objective_Box" style="display: none;"><em></em>
@@ -2657,16 +2313,16 @@
 
                  </select>
 						<div class="invalid-feedback">
-															Please select your Education
+															Please select your Tax Residency
 									</div>
 						</div>
 
 						<div class="col-xs-12 col-sm-4">
 						<input type="text"  name="" class="form-control " id="Tin_ID_2" placeholder="TIN" style="display:none;" name="Tin_ID_2" >
 						</div>
-
+            <div class="col-xs-12 col-sm-4">
 						<button type="button" class="btn btn-light" onclick="" id="AddCountry_ID_2" style="display:none;" >+</button>
-
+          </div>
 						</div>
 
 			</div>
@@ -2676,19 +2332,23 @@
 
       </div>
 				<!-- End  of Tax Residency Declaration  -->
-                  </div> <!-- End of Card Body Fifth -->
-                </div> <!-- End of Collpase Fifth -->
-              </div> <!-- End of Card Fifth-->
+
+
+            </div><!--End of Fifth Card body-->
+          </div><!--End of Fifth Card -->
  <!-- End of Card Fifth-->
-			    <div></div>
-	  <div></div>
+
 			  <div class="form-group form-footer">
                     <div class="btn-groups">
-                        <input type="submit" class="btn btn-info" value="Apply Now" onclick="VerifyInformation()">
-						<input class="btn btn-info" type="reset" value="Reset">
+                        <input type="button" class="btn btn-info" value="Review Submission" onclick="relocate_Verify()">
+
+						<!-- <input class="btn btn-info" type="reset" value="Reset"> -->
 						<input type="submit" class="btn btn-info" value="Back" a href="" onclick="goBack()">
                     </div>
 					</div>
+
+
+      <!-- Problem here -->
             </div><!--End of Accordian Please do not disturb-->
 			</form> <!-- End of Form Accordian Please do not disturb-->
 	  </div> <!-- end of Container Accordian Please do not disturb -->
@@ -2708,7 +2368,7 @@
 <script type="text/javascript">
 
 $(document).ready(function(){
-  
+
    $('#AddCountry_ID').click(function(){
 
     $('#AddCountry_2').show();
@@ -2723,7 +2383,7 @@ $(document).ready(function(){
 <script type="text/javascript">
 
 $(document).ready(function(){
-  
+
    $('#AddCountry_ID_2_Remove').click(function(){
 
     $('#AddCountry_2').hide();
@@ -2841,7 +2501,7 @@ $(function () {
             }
         });
     });
-	  
+
 <!-- #changed on 21May source of funds -->
 $(function () {
 
@@ -2860,7 +2520,7 @@ $(function () {
         });
 
     });
-	
+
 <!-- #changed on 21May end source of funds-->
 <!-- Checkbox United States of tax Residency , https://codepen.io/hardiksolanki/pen/BKrKGa-->
 $(function () {
@@ -3140,10 +2800,20 @@ window.onload = function() {
 }
 </script>
 <script>
-function goBack() {
-  window.history.back();
-}
+    function goBack() {
+      window.history.back();
+    }
 </script>
+<script>
+    function relocate_Verify()
+    {
+    	     location.href = 'Verfy_Information.html';
+    }
 
+    function relocate_FormsFinal2()
+    {
+         location.href = 'Forms_Final.html';
+    }
+</script>
 </body>
 <html>
